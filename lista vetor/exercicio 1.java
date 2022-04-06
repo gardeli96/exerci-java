@@ -1,22 +1,32 @@
+package vetorial;
 
-        Scanner leia = new Scanner(System.in);
+import java.util.Scanner;
 
-        int[] vetor = new int [5];
-        int i, maior = 0;
+public class exercicio1 {
 
-        for(i = 0; i < 5; i++) {
-        System.out.println("Digite um número: ");
-            vetor [i] = leia.nextInt();
-            if( i == 0) {
-                 maior = vetor[0];
-            }
-            if(vetor[i] > maior) {
-                maior = vetor[i];
-            }
-        }
-        System.out.println("\nO maior número é o " + maior);
+	public static void main(String[] args) {
+		  Scanner leia = new Scanner(System.in);
 
-        leia.close();
-    }
+	        int[] vetor = new int [5];
+	        int i, maior = 0;
 
-}
+	        for(i = 0; i < 5; i++) {
+	        System.out.println("Digite um número: ");
+	            vetor [i] = leia.nextInt();
+	            if( i == 0) {
+	                 maior = vetor[0];
+	            }
+	            if(vetor[i] > maior) {
+	                maior = vetor[i];
+	            }
+	        }
+	        System.out.println("\nO maior número é o " + maior);
+
+	        leia.close();
+	    }
+
+	
+
+	}
+
+
